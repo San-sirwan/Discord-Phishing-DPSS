@@ -2,7 +2,7 @@
 a discord phishing site source that help you to get details of discord accounts 
 
 # Discord Phishing Site Source
-**DPSS** is a phishing site that sending the infos to your webhook
+**DPSS** is a phishing site that sending the infos to your webhook, some people were selling it for 50$-250$ but i made one and leaked!
 
 ## Community 
 
