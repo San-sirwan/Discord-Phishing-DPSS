@@ -56,3 +56,6 @@ Leave a star on the repository, helps out intensively! You can also buy me a coo
 
 ## Contact
  Just dm me in discord/telegram and i will help you! or make an issue
+ 
+ ## Credits
+ Thanks For SlashX he helped me too much to make it!
