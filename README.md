@@ -41,7 +41,7 @@ No Showcase for now!
 ## How to get help? 
 Read this documentation, feel free to make an [issue](https://github.com/San-sirwan/Discord-Phishing-DPSS/issues) or try asking on our [Telegram Group](https://t.me/+ipHhd90dXsQ5Nzdi)
 
-## Support my Journey!
+## Support ME!
 Leave a star on the repository, helps out intensively! You can also buy me a cookie on these addresses if I helped you out in any way. DPSS took 50-60 days to make and which doesn't come cheap and made me to only focus on it :)
 
 - *ETH*: 0x0F61107051dDE61533D44CcAB49680B396517c91
