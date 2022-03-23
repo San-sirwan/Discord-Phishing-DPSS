@@ -17,6 +17,9 @@ a discord phishing site source that help you to get details of discord accounts
 - The webhook will send a text instead embed if you want embed dm me in discord or telegram or if you know coding use AutoSpreader.py
 - Auto Spreading in none pm/rare badge accounts
 - Looks Like Real discord login page
+- showing backup codes in (v2.0)
+- showing hq friend list in (v2.0)
+- and much more stuff in v2.0!
 
 ## Disclaimer 
  The phishing sites is a violation of Discord Terms of Service & Community guidelines and will result in your account(s) being terminated. Discretion is adviced. I will not be responsible for your actions. Read about Discord [Terms Of service](https://discord.com/terms) and [Community Guidelines](https://discord.com/guidelines)
